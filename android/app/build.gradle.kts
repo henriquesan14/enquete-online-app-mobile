@@ -8,7 +8,6 @@ plugins {
 android {
     namespace = "com.example.enquete_online_app_mobile"
     compileSdk = flutter.compileSdkVersion
-    ndkVersion = flutter.ndkVersion
 
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_11
@@ -28,6 +27,9 @@ android {
         targetSdk = flutter.targetSdkVersion
         versionCode = flutter.versionCode
         versionName = flutter.versionName
+        resValue("string", "fb_login_protocol_scheme", project.properties["FACEBOOK_LOGIN_PROTOCOL_SCHEME"] as String)
+        resValue("string", "facebook_app_id", project.properties["FACEBOOK_APP_ID"] as String)
+        resValue("string", "facebook_client_token", project.properties["FACEBOOK_CLIENT_TOKEN"] as String)
     }
 
     buildTypes {
