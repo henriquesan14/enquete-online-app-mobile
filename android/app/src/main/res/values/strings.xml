@@ -1,0 +1,9 @@
+<resources>
+    <string name="facebook_app_id">${FACEBOOK_APP_ID}</string>
+    <string name="fb_login_protocol_scheme">${FACEBOOK_LOGIN_PROTOCOL_SCHEME}</string>
+    <string name="facebook_client_token">${FACEBOOK_CLIENT_TOKEN}</string>
+</resources>
+
+
+
+
