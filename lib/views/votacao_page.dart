@@ -30,11 +30,8 @@ class _VotacaoPageState extends State<VotacaoPage> {
     signalRService.startConnection(widget.enqueteId);
 
     signalRService.resultadoStream.listen((resultadoAtualizado) {
-      print('rweteste websocket');
       getEnquete();
-      setState(() {
-        mostrarResultado = true;
-      });
+      
     });
   }
 

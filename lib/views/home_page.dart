@@ -69,7 +69,7 @@ class _HomePageState extends State<HomePage> {
       setState(() {
         _enquetes.addAll(paginated.data);
         _page++;
-        _hasMore = paginated.data.isNotEmpty;
+        _hasMore = paginated.data.length == _pageSize;
       });
     } catch (e) {
       debugPrint('Erro ao carregar enquetes: $e');
